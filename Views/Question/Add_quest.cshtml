@@ -1,0 +1,50 @@
+﻿@{
+    Layout="~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <link href="~/Content/bootstrap.css" rel="stylesheet" />
+        <script src="~/Scripts/bootstrap.js"></script>
+        <script src="~/Scripts/jquery.js"></script>
+		<link href="~/Content/styles.css" rel="stylesheet">
+        <style>
+            
+        </style>
+	</head>
+	<body>
+        
+<!--login modal-->
+<div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h1 class="text-center">Add question</h1>
+      </div>
+      <div class="modal-body">
+
+          <form action="/Question/quest_add" method="post">
+              <label>Question</label>
+              <input type="text" name="quest" />
+              <br />
+              <label>Catagory</label>
+              <input type="text" name="catag"/>
+              <br />
+              <label>Enter Username</label>
+              <input type="text" name="user"/>
+              <br />
+              <input type="submit" value="Add" class="btn btn-default"/>
+          </form>
+          
+      </div>
+  </div>
+  </div>
+</div>
+	<!-- script references -->
+		<script src="~/Scripts/jquery.min.js"></script>
+		<script src="~/Scripts/bootstrap.min.js"></script>
+		<script src="~/Scripts/scripts.js"></script>
+	</body>
+</html>

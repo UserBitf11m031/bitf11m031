@@ -1,0 +1,16 @@
+﻿@{
+    Layout="~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-xs-3"></div>
+<div class="Col-xs-6">
+
+    <br />
+    @foreach (var x in @ViewBag.list) 
+    {
+        <a href="#" style="margin-left:650px;" target="_blank">@x.Question1</a> 
+        <a href="@Url.Action("Delete_ques", "Question", new {u=x.QuesId})"  style="margin-left:650px;">Delete</a>
+        <hr />
+    }
+    
+</div>

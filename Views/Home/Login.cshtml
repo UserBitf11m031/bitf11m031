@@ -1,0 +1,16 @@
+﻿@{
+    Layout="~/Views/Shared/_Layout.cshtml";
+}
+@model Ead_project.Models.Question
+
+<div class="col-xs-3"></div>
+<div class="Col-xs-6" id="row">
+    <br />
+    @foreach (var x in @ViewBag.list) 
+    {
+        <a href="#" style="margin-left:650px;" target="_blank">@x.Question1</a>
+        <hr />
+    }
+    
+</div>
+
